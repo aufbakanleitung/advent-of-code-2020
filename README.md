@@ -1,4 +1,4 @@
-# advent-of-code-2020
+# Advent of Code: Python sollutions
 https://adventofcode.com/2020
 
 Lessons learned:
