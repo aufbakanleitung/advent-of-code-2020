@@ -3,7 +3,6 @@
 import re
 
 pass_list = [line.rstrip('\n') for line in open("aoc02_input.txt")]
-
 count1, count2 = 0, 0
 
 for line in pass_list:
@@ -13,4 +12,5 @@ for line in pass_list:
     # Exactly one of these positions must contain the given letter
     count2 += (passw[int(n1)-1] == letter) ^ (passw[int(n2)-1] == letter)
 
-print(f'count1: {count1}\ncount2: {count2}')
+print(f'count1: {count1}\n'
+      f'count2: {count2}')
