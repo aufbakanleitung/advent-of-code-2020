@@ -10,5 +10,5 @@ n1, n2, letter, x, passw = re.split('[-:\s]', line)
 * assignment 3 - If you're using the x coordinate to calculate the y coordinate by, don't forget to divide y over x's step size to make them independent again. Though it's probably better never to make the two depend on each other in the first place.
 ```python    
 for x in range(0, len(trees), xn):
-  y = int(x*yn/xn) % len(trees[0])
+    y = int(x*yn/xn) % len(trees[0])
 ```
