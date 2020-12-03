@@ -13,7 +13,6 @@
 # .#..#...#.#
 
 trees = [line.rstrip('\n') for line in open("aoc03_input.txt")]
-print(trees)
 
 def tree_count(xn, yn):
     count1 = 0
@@ -29,6 +28,6 @@ print(tree_count(1,3))
 # What do you get if you multiply together the number of trees encountered on each of the listed slopes?
 count2 = 1
 slopes = [[1,1], [1,3], [1,5], [1,7], [2,1]]
-for x,y in slopes:
+for x, y in slopes:
     count2 *= (tree_count(x,y))
 print(count2)
