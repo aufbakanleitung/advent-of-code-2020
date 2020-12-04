@@ -19,11 +19,8 @@ for x in range(0, len(trees), xn):
 ```python
     dict_list = [dict([(value_pair.split(":")) for value_pair in list]) for list in llist]
 ```
-* assignment 4 - Don't remove values from the list you're looping over, but make a copy of it and remove the values from there.
+* assignment 4 - Don't remove values from the list you're looping over, but make a copy() of it and remove the values from there.
 ```python
-test = [3,4]
-list = [1,4,7,7,2,3,4,5]
-copied_list = list.copy()
-
-[copied_list.remove(item) for item in list if item in test]
+test = [3,4]; list = [1,4,7,7,2,3,4,5]; copied_list = list.copy()  # Make three lists
+[copied_list.remove(item) for item in list if item in test] 
 ```
