@@ -21,6 +21,6 @@ for x in range(0, len(trees), xn):
 ```
 * assignment 4 - Don't remove values from the list you're looping over, but make a copy() of it and remove the values from there.
 ```python
-test = [3,4]; list = [1,4,7,7,2,3,4,5]; copied_list = list.copy()  # Make three lists
-[copied_list.remove(item) for item in list if item in test] 
+list = [1,4,7,7,2,3,4,5]; copied_list = list.copy(); test = [3,4]  # Make three lists
+[copied_list.remove(item) for item in list if item in test]        # Remove items in test from copied_list
 ```
