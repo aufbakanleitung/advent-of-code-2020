@@ -1,9 +1,5 @@
 # --- Day 4: Passport Processing ---
-import pprint
 import re
-
-fields = ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
-opt = 'cid'
 
 with open('aoc04_input.txt') as f:
     content = f.read().split('\n\n')
@@ -24,9 +20,10 @@ def valid_length(passports):
     print(f"valid by length: {len(valids)}")
     return valids
 
-# [print(passp) for passp in valid_length(pass_dict)]
 
-# Part2: Count passwords that have valid values. cid optional.
+# Part 2: Count passwords that have valid values. cid optional.
+
+# Rules for validity
 byr = range(1920, 2002+1)
 iyr = range(2010, 2020+1)
 eyr = range(2020, 2030+1)
@@ -35,10 +32,10 @@ hcl = int('ffffff', 16)
 ecl = ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth']
 
 
-valids_l = valid_length(pass_dict)
-valids = valid_length(pass_dict)
+valid_len = valid_length(pass_dict)
+valids = valid_len.copy()
 
-for passport in valids_l:
+for passport in valid_len:
     if int(passport['byr']) not in byr:
         # print(f"byr invalid: {passport['byr']}")
         valids.remove(passport)
