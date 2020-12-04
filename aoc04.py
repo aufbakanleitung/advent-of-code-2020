@@ -6,7 +6,7 @@ with open('aoc04_input.txt') as f:
     passports = [re.split('[\n\s]', line) for line in content]
     pass_dict = [dict([(line.split(":")) for line in passport]) for passport in passports]
 
-# Part1: Count passports that have all required fields. Treat cid as optional.
+# -- Part1: Count passports that have all required fields. Treat cid as optional. --
 def valid_length(passports):
     valids = []
     for passport in passports:
@@ -17,11 +17,11 @@ def valid_length(passports):
             for item in passport:
                 if 'cid' in item:
                     valids.remove(passport)
-    print(f"valid by length: {len(valids)}")
+    print(f"Valid by length: {len(valids)}")
     return valids
 
 
-# Part 2: Count passwords that have valid values. cid optional.
+# -- Part 2: Count passwords that have valid values. cid optional. --
 
 # Rules for validity
 byr = range(1920, 2002+1)
@@ -63,4 +63,4 @@ for passport in valid_len:
     elif len(passport['pid']) != 9:
         print(f"pid invalid: {passport['pid']}")
         valids.remove(passport)
-print(len(valids))
+print(f"Valid passwords: {len(valids)}")
