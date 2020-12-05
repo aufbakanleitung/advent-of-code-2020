@@ -20,6 +20,7 @@ for seat in seats:
 # What is the highest seat ID on a boarding pass?
 print("Highest boarding pass:", (sorted(seatIDs)[-1]))
 
+# What is the ID of the missing seat?
 count = 91
 for i in (sorted(seatIDs)):
     if i != count:
