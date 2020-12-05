@@ -24,7 +24,7 @@ count = 91
 for i in (sorted(seatIDs)):
     if i != count:
         print("Missing seat:", i)
-        breakgitgi
+        break
     else:
        count += 1
 
