@@ -63,4 +63,5 @@ for passport in valid_len:
     elif len(passport['pid']) != 9:
         print(f"pid invalid: {passport['pid']}")
         valids.remove(passport)
+
 print(f"Valid passwords: {len(valids)}")
