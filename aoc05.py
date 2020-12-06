@@ -2,7 +2,7 @@
 # FBFBBFF = 44/127 rows (2^7)
 # RLR = 5/7 columns (2^3)
 example = ['FBFBBFFRLR']
-seats = [line.rstrip('\n') for line in open("aoc05_input.txt")]
+seats = [line.rstrip('\n') for line in open("input/aoc05_input.txt")]
 
 def to_seatnr(seat):
     seatnr = ''

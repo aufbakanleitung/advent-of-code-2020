@@ -12,7 +12,7 @@
 # #...##....#
 # .#..#...#.#
 
-trees = [line.rstrip('\n') for line in open("aoc03_input.txt")]
+trees = [line.rstrip('\n') for line in open("input/aoc03_input.txt")]
 
 def tree_count(xn, yn):
     count1 = 0

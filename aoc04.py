@@ -1,7 +1,7 @@
 # --- Day 4: Passport Processing ---
 import re
 
-with open('aoc04_input.txt') as f:
+with open('input/aoc04_input.txt') as f:
     content = f.read().split('\n\n')
     passports = [re.split('[\n\s]', line) for line in content]
     pass_dict = [dict([(line.split(":")) for line in passport]) for passport in passports]

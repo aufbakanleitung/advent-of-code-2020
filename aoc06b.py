@@ -1,7 +1,7 @@
 # --- Day 6b: Custom Customs ---
 import re
 
-with open('aoc06_input.txt') as f:
+with open('input/aoc06_input.txt') as f:
     content = f.read().split('\n\n')
     deforms = [re.split('[\n]', line) for line in content]
     sorted_forms = [[''.join(sorted(line)) for line in form] for form in deforms]

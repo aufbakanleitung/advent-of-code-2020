@@ -2,7 +2,7 @@
 # Second try because the first run was terrible
 import re
 
-pass_list = [line.rstrip('\n') for line in open("aoc02_input.txt")]
+pass_list = [line.rstrip('\n') for line in open("input/aoc02_input.txt")]
 count1, count2 = 0, 0
 
 for line in pass_list:

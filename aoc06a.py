@@ -1,5 +1,5 @@
 # --- Day 6a: Custom Customs ---
-with open('aoc06_input.txt') as f:
+with open('input/aoc06_input.txt') as f:
     content = f.read().split('\n\n')
     forms = [set(line) for line in content]
     [sett.discard('\n') for sett in forms]

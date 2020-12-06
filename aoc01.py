@@ -3,7 +3,7 @@
 import math
 
 expense_example = [1721, 979, 366, 299, 675, 1456]
-expense_report = [int(line.rstrip('\n')) for line in open("aoc01_input.txt")]
+expense_report = [int(line.rstrip('\n')) for line in open("input/aoc01_input.txt")]
 
 def find_twosum(report, sumnr=2020):
     nr_list = []
