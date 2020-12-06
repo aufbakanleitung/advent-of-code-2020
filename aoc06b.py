@@ -1,5 +1,4 @@
-# For each group, count the number of questions to which everyone answered "yes".
-# What is the sum of those counts?
+# --- Day 6b: Custom Customs ---
 import re
 
 with open('aoc06_input.txt') as f:
@@ -16,7 +15,8 @@ def test_every_question(group):
                 test = test.replace(answer, '')
     return test
 
-
+# For each group, count the number of questions to which everyone answered "yes".
+# What is the sum of those counts?
 count = 0
 for group in sorted_forms:
     print("everyone answered:", test_every_question(group))

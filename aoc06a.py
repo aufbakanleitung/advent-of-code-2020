@@ -1,13 +1,9 @@
-# --- Day 6: Custom Customs ---
-import re
-
+# --- Day 6a: Custom Customs ---
 with open('aoc06_input.txt') as f:
     content = f.read().split('\n\n')
     forms = [set(line) for line in content]
     [sett.discard('\n') for sett in forms]
 
-
-print(forms)
 # For each group, count the number of questions to which anyone answered "yes".
 # What is the sum of those counts?
 form_sum = 0
