@@ -24,3 +24,7 @@ for x in range(0, len(trees), xn):
 list = [1,4,7,7,2,3,4,5]; copied_list = list.copy(); test = [3,4]  # Make three lists
 [copied_list.remove(item) for item in list if item in test]        # Remove items in test from copied_list
 ```
+* assignment 6 - This is how you sort a string.
+```python
+sorted_string = ''.join(sorted(unsorted_string))
+```
