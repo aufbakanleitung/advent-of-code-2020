@@ -11,8 +11,7 @@ acc = 0
 loc = 0
 
 def read_instruction(inst):
-    global acc
-    global loc
+    global acc, loc
     # print(f"input: {inst}")
     if inst[0] == "nop":
         inst[2] = True
