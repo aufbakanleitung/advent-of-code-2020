@@ -28,3 +28,15 @@ list = [1,4,7,7,2,3,4,5]; copied_list = list.copy(); test = [3,4]  # Make three 
 ```python
 sorted_string = ''.join(sorted(unsorted_string))
 ```
+* assignment 7 - In Regex look before a certain string with the `?=` positive lookahead and find all occurences with `re.findall()`.
+```python
+re.findall(r'(\d+)*\s*(\w+\s\w+)(?=\sbag)', line)
+```
+* assignment 7 - Recursion is very powerful, looks very clean, but it's really difficult to grasp.
+```python
+def find_bags(color): 
+    teller = 0
+    for bag in bags_dict[color]:
+        teller += bags_dict[color][bag] + find_bags(bag) * bags_dict[color][bag]  # Recursively sum the contents of the bag
+    return teller
+```
