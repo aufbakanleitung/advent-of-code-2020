@@ -2,7 +2,7 @@
 example = [0, 3, 6]
 example2 = [0, 3, 6, 0, 3]
 input = [19,0,5,1,10,13]
-number_spoken = 300000
+number_spoken = 2020
 
 def find_index(input_list, value):
     values = []
