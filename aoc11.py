@@ -32,7 +32,7 @@ def print_string(seats):
         print(''.join(line))
     print()
 
-# How many seats end up occupied?
+
 def run():
     seat_history = [seats]
     print_string(seat_history[0])
@@ -43,5 +43,6 @@ def run():
             print(f"Seating equilibrium at: {i-1}")
             return sum(line.count('#') for line in seat_history[i])
 
+# How many seats end up occupied?
 print(f"Seating: {run()}")
 
